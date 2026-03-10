@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease;
+  background: #fff;
+  color: #111;
+}
+
+body.dark {
+  background: #000000;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  position: relative;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+body.dark .navbar {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* REMOVE BLUE LINK */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* LEFT MENU */
+.nav-left {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-left a {
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-left a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: currentColor;
+  transition: 0.4s;
+}
+
+.nav-left a:hover::after,
+.nav-left a.active::after {
+  width: 100%;
+}
+
+/* CENTER LOGO */
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-circle {
+  width: 55px;
+  height: 55px;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+body.dark .logo-circle {
+  background: white;
+  color: black;
+}
+
+.logo-circle:hover {
+  width: 190px;
+}
+
+.logo-short,
+.logo-full {
+  position: absolute;
+  transition: 0.4s ease;
+  white-space: nowrap;
+}
+
+.logo-short {
+  opacity: 1;
+}
+
+.logo-full {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.logo-circle:hover .logo-short {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.logo-circle:hover .logo-full {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  gap: 18px;
+  font-size: 18px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  transform: translateY(-3px);
+}
+
+/* Light Mode Colors */
+.tw { color: #1DA1F2; }
+.gh { color: #333; }
+.li { color: #0A66C2; }
+.pi { color: #E60023; }
+.dr { color: #EA4C89; }
+
+/* Dark Mode Social White */
+body.dark .social-icons svg {
+  color: white !important;
+}
+
+/* THEME BUTTON */
+.theme-btn {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.theme-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.4s ease;
+  z-index: 0;
+}
+
+/* Fill based on mode */
+body.dark .theme-btn::before {
+  background: white;
+}
+body:not(.dark) .theme-btn::before {
+  background: black;
+}
+
+.theme-btn:hover::before {
+  transform: scale(1);
+}
+
+/* Icon color always on top */
+.theme-icon {
+  position: relative;
+  z-index: 2;
+  transition: 0.4s ease;
+}
+
+/* Light mode text/icon color */
+body:not(.dark) .theme-btn {
+  color: black;
+}
+body:not(.dark) .theme-btn:hover {
+  color: white;
+}
+
+/* Dark mode text/icon color */
+body.dark .theme-btn {
+  color: white;
+}
+body.dark .theme-btn:hover {
+  color: black;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: currentColor;
+  transition: 0.4s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* SIDE PANEL */
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 260px;
+  height: 100vh;
+  background: white;
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: 0.4s;
+  z-index: 999;
+}
+
+body.dark .side-panel {
+  background: #111;
+  color: white;
+}
+
+.side-panel.open {
+  right: 0;
+}
+
+.side-panel a {
+  font-size: 18px;
+}
+
+/* Side Social */
+.side-social {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+body.dark .side-social svg {
+  color: white;
+}
+
+/* OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+  .nav-left {
+    display: none;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .nav-center {
+    position: static;
+    transform: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Navbar theme button - mobile par hide */
+@media (max-width: 900px) {
+  .nav-right .theme-btn {
+    display: none;
+  }
+}

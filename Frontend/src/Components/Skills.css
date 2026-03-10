@@ -1,0 +1,97 @@
+:root{
+--tooltip-bg:black;
+--tooltip-text:white;
+}
+
+.dark{
+--tooltip-bg:white;
+--tooltip-text:black;
+}
+.skills{
+padding:80px 5%;
+transition:0.3s;
+}
+
+.skills-title{
+text-align:center;
+font-size:34px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.skills-sub{
+text-align:center;
+opacity:0.7;
+margin-bottom:60px;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:25px;
+justify-items:center;
+}
+
+/* card */
+
+.skill-card{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:8px;
+}
+
+/* icon box */
+
+.icon-box{
+width:65px;
+height:65px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:14px;
+border:1px solid gray;
+background:var(--card-bg);
+position:relative;
+transition:0.3s;
+cursor:pointer;
+}
+
+.icon-box:hover{
+transform:scale(1.1);
+}
+
+/* tooltip */
+
+.icon-box::after{
+content:attr(data-name);
+position:absolute;
+bottom:80px;
+background:var(--tooltip-bg);
+color:var(--tooltip-text);
+font-size:12px;
+padding:4px 8px;
+border-radius:6px;
+opacity:0;
+pointer-events:none;
+transition:0.3s;
+white-space:nowrap;
+}
+
+.icon-box:hover::after{
+opacity:1;
+}
+
+/* icon */
+
+.icon-box img{
+width:32px;
+height:32px;
+}
+
+/* type text */
+
+.skill-type{
+font-size:12px;
+opacity:0.7;
+}
