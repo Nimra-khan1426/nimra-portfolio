@@ -1,7 +1,7 @@
 .hero {
   padding-top: 90px; /* navbar height ke barabar */
   width: 100%;
-  height: 100vh; /* viewport minus navbar */
+  min-height: 100vh; /* viewport minus navbar */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -505,10 +505,6 @@
 
 /* Mobile Landscape */
 @media screen and (max-width: 768px) {
-  .hero {
-    padding: 40px 15px;
-    min-height: auto;
-  }
   
   .hero-container {
     gap: 30px;
@@ -557,8 +553,17 @@
     font-size: 12px;
   }
   
+   .hero {
+    padding-top: 80px; /* adjust for navbar */
+    min-height: calc(100vh - 80px); /* viewport minus navbar */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .hero::after {
-    font-size: 120px;
+    font-size: 100px; /* smaller logo */
+    top: 40%; /* move a bit down */
+    left: 50%;
   }
   
   #designer .description,
@@ -569,8 +574,16 @@
 
 /* Mobile Portrait */
 @media screen and (max-width: 480px) {
-  .hero {
-    padding: 30px 10px;
+   .hero {
+    padding-top: 120px;
+    min-height: calc(100vh - 70px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero::after {
+    font-size: 60px;
+    top: 35%;
   }
   
   .hero-container {
@@ -635,10 +648,7 @@
     font-size: 12px;
   }
   
-  .hero::after {
-    font-size: 80px;
-  }
-  
+ 
   .code-content .indent {
     padding-left: 15px;
   }

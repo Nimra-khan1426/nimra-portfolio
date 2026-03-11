@@ -149,3 +149,17 @@ padding:16px;
   background-color: var(--exp-bg); /* adapt to theme */
   color: var(--exp-year);
 }
+@media (max-width: 600px) {
+  .timeline-content {
+    position: relative; /* already relative */
+    padding-top: 40px; /* extra space for year if needed */
+  }
+
+  .year-exp {
+    position: static; /* remove absolute positioning */
+    display: inline-block;
+    margin-top: 4px; /* space below company name */
+    float: none;
+    margin-bottom: 10px;
+  }
+}

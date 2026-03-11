@@ -72,26 +72,50 @@ border-radius:20px;
 background:var(--project-tag-bg);
 }
 
-.buttons{
-display:flex;
-gap:90px;
+/* Container for two buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between; /* GitHub left, Live Demo right */
+  align-items: center;
+  gap: 15px; /* space between buttons */
+  flex-wrap: wrap; /* allow stacking on small screens */
+  margin-top: 15px;
 }
 
-.buttons a{
-display:flex;
-align-items:center;
-gap:6px;
-padding:8px 14px;
-border-radius:8px;
-font-size:14px;
-text-decoration:none;
-background:var(--project-btn-bg);
-color:var(--project-text);
+/* Individual buttons */
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  background: var(--project-btn-bg);
+  color: var(--project-text);
+  transition: 0.3s;
+  flex: 1; /* allow buttons to grow equally if needed */
 }
 
-.buttons .live{
-background:#4f46e5;
-color:white;
+.buttons .live {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column; /* stack buttons */
+    align-items: stretch; /* full width */
+    gap: 10px;
+  }
+
+  .buttons a {
+    flex: unset; /* remove flex-grow */
+    width: 100%; /* full width button */
+    justify-content: center; /* center text inside button */
+  }
 }
 
 .project-image{
