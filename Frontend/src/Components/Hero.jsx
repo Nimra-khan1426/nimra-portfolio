@@ -106,7 +106,7 @@ const Hero = ({ darkMode }) => {
   return (
     <section 
       ref={sectionRef}
-      className={`hero ${darkMode ? "dark" : ""} ${isVisible ? 'visible' : ''}`}
+      className={`hero ${darkMode ? "dark" : ""} ${isVisible ? 'visible' : ''}`} id="home"
     >
       <div className="hero-container">
         {/* LEFT CONTENT */}

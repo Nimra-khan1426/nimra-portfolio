@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import {
-  FaTwitter,
   FaGithub,
   FaLinkedinIn,
-  FaPinterestP,
-  FaDribbble,
+  FaEnvelope,
+  FaWhatsapp,
+  FaInstagram,
   FaMoon,
   FaSun,
 } from "react-icons/fa";
@@ -14,6 +14,19 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [hoverTheme, setHoverTheme] = useState(false); // hover state
+
+  const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+
+  setMenuOpen(false);
+};
 
   useEffect(() => {
     darkMode
@@ -27,15 +40,16 @@ const Navbar = () => {
 
         {/* LEFT MENU */}
         <div className="nav-left">
-          <a href="#" className="active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Articles</a>
+         <a onClick={() => scrollToSection("home")}>Home</a>
+<a onClick={() => scrollToSection("about")}>About</a>
+<a onClick={() => scrollToSection("projects")}>Projects</a>
+<a onClick={() => scrollToSection("contact")}>Contact</a>
         </div>
 
         {/* CENTER LOGO */}
         <div className="nav-center">
           <div className="logo-circle">
+           
             <span className="logo-short">NK</span>
             <span className="logo-full">Nimra Khan</span>
           </div>
@@ -45,12 +59,26 @@ const Navbar = () => {
         <div className="nav-right">
 
           <div className="social-icons">
-            <FaTwitter className="tw"/>
-            <FaGithub className="gh"/>
-            <FaLinkedinIn className="li"/>
-            <FaPinterestP className="pi"/>
-            <FaDribbble className="dr"/>
-          </div>
+  <a href="mailto:namrakhan1426@gmail.com">
+    <FaEnvelope className="em"/>
+  </a>
+
+  <a href="https://github.com/Nimra-khan1426">
+    <FaGithub className="gh"/>
+  </a>
+
+  <a href="https://www.linkedin.com/in/nimra-khan-512461370/">
+    <FaLinkedinIn className="li"/>
+  </a>
+
+  <a href="https://wa.me/923165439691">
+    <FaWhatsapp className="wp"/>
+  </a>
+
+  <a href="https://www.instagram.com/nimrakhan._1426/">
+    <FaInstagram className="ig"/>
+  </a>
+</div>
 
           {/* THEME BUTTON */}
           <div
@@ -79,11 +107,20 @@ const Navbar = () => {
       </nav>
 
       {/* SIDE PANEL */}
+      
       <div className={`side-panel ${menuOpen ? "open" : ""}`}>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Articles</a>
+          <div className="nav-center">
+        
+          <div className="logo-circle">
+            <span className="logo-short">NK</span>
+            <span className="logo-full">Nimra Khan</span>
+          </div>
+        
+        </div>
+      <a onClick={() => scrollToSection("home")}>Home</a>
+<a onClick={() => scrollToSection("about")}>About</a>
+<a onClick={() => scrollToSection("projects")}>Projects</a>
+<a onClick={() => scrollToSection("contact")}>Contact</a>
 
         {/* Theme button in side panel */}
         <div
@@ -100,11 +137,11 @@ const Navbar = () => {
         </div>
 
         <div className="side-social">
-          <FaTwitter />
-          <FaGithub />
-          <FaLinkedinIn />
-          <FaPinterestP />
-          <FaDribbble />
+               <a href="mailto:namrakhan1426@gmail.com"><FaEnvelope className="em"/></a>
+                      <a href="https://github.com/Nimra-khan1426"><FaGithub className="gh"/></a>
+                      <a href="https://www.linkedin.com/in/nimra-khan-512461370/"><FaLinkedinIn className="li"/></a>
+                      <a href="https://wa.me/923165439691"><FaWhatsapp className="wp"/></a>
+                      <a href="https://www.instagram.com/nimrakhan._1426/">< FaInstagram  className="ig"/></a>
         </div>
       </div>
 

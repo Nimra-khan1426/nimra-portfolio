@@ -1,11 +1,12 @@
 .hero {
+  padding-top: 90px; /* navbar height ke barabar */
   width: 100%;
-  min-height: 90vh;
+  height: 100vh; /* viewport minus navbar */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  transition: 0.3s;
+  padding-left: 20px;
+  padding-right: 20px;
   position: relative;
   overflow: hidden;
 }
@@ -86,7 +87,7 @@
   width: 100%;
   max-width: 1400px;
   display: flex;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
   position: relative;
@@ -100,7 +101,7 @@
   flex: 1;
   position: relative;
   z-index: 3;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .hero-hello {

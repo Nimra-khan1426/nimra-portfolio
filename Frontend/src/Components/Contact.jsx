@@ -53,7 +53,7 @@ const Contact = ({ darkMode }) => {
   };
 
   return (
-    <section ref={sectionRef} className={`contact-section ${darkMode ? "dark" : ""}`}>
+    <section ref={sectionRef}  id="contact"  className={`contact-section ${darkMode ? "dark" : ""}`}>
       <div className="contact-container">
 
         {/* LEFT SIDE */}

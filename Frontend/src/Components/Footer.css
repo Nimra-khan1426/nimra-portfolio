@@ -176,3 +176,45 @@
     text-align: left;
   }
 }
+
+/* SOCIAL ICON COLORS */
+
+.footer-social .em{
+  color: #ea4335; /* email red */
+}
+
+.footer-social .gh{
+  color: #333; /* github */
+}
+
+.dark .footer-social .gh{
+  color: #fff; /* github dark mode */
+}
+
+.footer-social .li{
+  color: #0077b5; /* linkedin */
+}
+
+.footer-social .wp{
+  color: #25d366; /* whatsapp */
+}
+
+.footer-social .ig{
+  color: #e1306c; /* instagram */
+}
+.footer-social svg{
+  font-size:18px;
+  margin:0 8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.footer-social a:hover svg{
+  transform: translateY(-3px) scale(1.15);
+  filter: drop-shadow(0 0 6px currentColor);
+}
+/* DARK MODE SOCIAL ICONS */
+
+.dark .footer-social svg{
+  color: #fff;
+}
