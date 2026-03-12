@@ -1,6 +1,12 @@
 {
-  "dependencies": {
-    "mongodb": "^7.1.0",
-    "mongoose": "^9.3.0"
+  "name": "nimra-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd backend && node server.js",
+    "start-frontend": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }

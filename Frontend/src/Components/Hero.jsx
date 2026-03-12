@@ -122,6 +122,7 @@ const Hero = ({ darkMode }) => {
                 options={{
                   strings: [
                     "Full Stack Developer",
+                    "MERN Stack Developer",
                     "Frontend Developer",
                     "UI Designer"
                   ],
