@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Footer.css";
 import { FaTwitter, FaGithub, FaLinkedinIn, FaPinterestP, FaDribbble, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
@@ -21,7 +22,7 @@ const Footer = ({ darkMode, scrollToSection }) => {
           <h4>Quick Links</h4>
           <div className="footer-links">
           <a onClick={() => scrollToSection("home")}>Home</a>
-<a onClick={() => scrollToSection("about")}>About</a>
+<Link to="/about">About</Link>
 <a onClick={() => scrollToSection("projects")}>Projects</a>
 <a onClick={() => scrollToSection("contact")}>Contact</a>
           </div>

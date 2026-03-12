@@ -79,8 +79,8 @@ const Hero = ({ darkMode }) => {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "Nimra_Khan_Resume.pdf";
+    link.href = "/public/Nimra_khan.pdf";
+    link.download = "Nimrakhan.pdf";
     link.click();
   };
 

@@ -1,0 +1,210 @@
+:root{
+--cert-border:#00000029;
+--cert-text:#111;
+--cert-sub:#666;
+--cert-btn:#000;
+--cert-btn-text:#fff;
+}
+
+.dark{
+--cert-border:#ffffff3e;
+--cert-text:#fff;
+--cert-sub:#aaa;
+--cert-btn:#fff;
+--cert-btn-text:#000;
+}
+
+/* SECTION */
+
+.certificates{
+width:100%;
+padding:120px 3%;
+}
+
+/* HEADER */
+
+.cert-header{
+text-align:center;
+margin-bottom:60px;
+}
+
+.cert-small{
+font-size:14px;
+opacity:.6;
+margin-bottom:10px;
+color:var(--cert-text);
+}
+
+.cert-title{
+font-size:clamp(27px,5vw,45px);
+color:var(--cert-text);
+}
+
+
+/* SLIDER */
+
+.cert-slider{
+max-width:1200px;
+margin:0 auto;
+
+display:flex;
+align-items:stretch;
+gap:30px;
+
+overflow-x:auto;
+scroll-behavior:smooth;
+
+padding:10px 4px;
+}
+
+.cert-slider::-webkit-scrollbar{
+display:none;
+}
+
+
+/* CARD */
+
+.cert-card{
+flex:0 0 320px;
+
+border:1px solid var(--cert-border);
+border-radius:16px;
+
+background:transparent;
+overflow:hidden;
+
+transition:0.3s;
+}
+
+.cert-card:hover{
+transform:translateY(-6px);
+}
+
+
+/* IMAGE */
+
+.cert-card img{
+width:100%;
+height:210px;
+object-fit:cover;
+}
+
+
+/* INFO */
+
+.cert-info{
+padding:18px;
+}
+
+.cert-info h3{
+font-size:19px;
+margin-bottom:6px;
+color:var(--cert-text);
+}
+
+.cert-info span{
+font-size:14px;
+color:var(--cert-sub);
+}
+
+
+/* BUTTONS */
+
+.cert-buttons{
+margin-top:50px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.cert-buttons button{
+padding:12px 28px;
+border:none;
+border-radius:40px;
+
+background:var(--cert-btn);
+color:var(--cert-btn-text);
+
+font-size:15px;
+cursor:pointer;
+
+transition:.3s;
+}
+
+.cert-buttons button:hover{
+opacity:.85;
+}
+
+
+/* TABLET */
+
+@media(max-width:1024px){
+
+.cert-slider{
+gap:24px;
+}
+
+.cert-card{
+flex:0 0 300px;
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.certificates{
+padding:100px 20px;
+}
+
+.cert-slider{
+gap:18px;
+}
+
+.cert-card{
+flex:0 0 260px;
+}
+
+.cert-card img{
+height:180px;
+}
+
+.cert-info h3{
+font-size:17px;
+}
+
+}
+
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+.cert-slider{
+gap:16px;
+}
+
+.cert-card{
+flex:0 0 230px;
+}
+
+.cert-card img{
+height:160px;
+}
+
+.cert-info{
+padding:14px;
+}
+
+.cert-info h3{
+font-size:16px;
+}
+
+.cert-info span{
+font-size:13px;
+}
+
+}

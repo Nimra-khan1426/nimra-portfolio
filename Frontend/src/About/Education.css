@@ -1,0 +1,182 @@
+:root{
+  --edu-border:#00000029;
+  --edu-card:#ffffff;
+  --edu-text:#111;
+  --edu-bg:#000000f2;
+  --edu-year:#fff;
+  --edu-btn-bg:#000;
+  --edu-btn-text:#fff;
+  --edu-btn-hover:rgba(0,0,0,0.85);
+}
+
+.dark{
+  --edu-border:#ffffff3e;
+  --edu-card:#1a1a1a;
+  --edu-text:#fff;
+  --edu-bg:#ffffff;
+  --edu-year:#000;
+  --edu-btn-bg:#fff;
+  --edu-btn-text:#000;
+  --edu-btn-hover:rgba(255,255,255,0.85);
+}
+
+.education{
+  padding:80px 5%;
+}
+
+.education-title{
+  text-align:center;
+  font-size:45px;
+  margin-bottom:50px;
+  color:var(--edu-text);
+}
+
+/* TIMELINE */
+.education-timeline{
+  position:relative;
+  max-width:900px;
+  margin:auto;
+}
+
+.education-timeline::before{
+  content:"";
+  position:absolute;
+  left:20px;
+  top:0;
+  width:2px;
+  height:100%;
+  background:var(--edu-border);
+}
+
+/* ITEM */
+.education-item{
+  display:flex;
+  gap:16px;
+  margin-bottom:35px;
+  position:relative;
+}
+
+.edu-dot{
+  width:12px;
+  height:12px;
+  background:#333;
+  border-radius:50%;
+  margin-top:8px;
+  flex-shrink:0;
+}
+
+/* CARD */
+.edu-content{
+  position:relative;
+  background:var(--edu-card);
+  padding:20px;
+  border-radius:12px;
+  border:1px solid var(--edu-border);
+  color:var(--edu-text);
+  width:100%;
+  transition:0.3s;
+}
+
+.edu-content:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* TITLE / TAG / SCHOOL */
+.edu-content h3{
+  font-size:18px;
+  margin-bottom:4px;
+}
+
+.edu-tag{
+  font-size:12px;
+  opacity:0.7;
+  display:block;
+  margin-bottom:8px;
+}
+
+.edu-school{
+  font-size:15px;
+  margin-bottom:4px;
+}
+
+.edu-location{
+  font-size:13px;
+  opacity:0.8;
+  margin-bottom:8px;
+}
+
+.edu-grade{
+  font-size:14px;
+  font-weight:500;
+  margin-bottom:10px;
+  color:var(--edu-text);
+}
+
+/* DOWNLOAD BUTTON */
+.edu-download{
+  display:inline-block;
+  text-decoration:none;
+  padding:8px 18px;
+  border-radius:40px;
+  background:var(--edu-btn-bg);
+  color:var(--edu-btn-text);
+  font-size:14px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.edu-download:hover{
+  background:var(--edu-btn-hover);
+  color:var(--edu-btn-text);
+}
+
+/* YEAR BADGE */
+.edu-year{
+  position:absolute;
+  top:16px;
+  right:15px;
+  font-size:13px;
+  font-weight:600;
+  padding:4px 8px;
+  border-radius:8px;
+  border:1px solid var(--edu-border);
+  background:var(--edu-bg);
+  color:var(--edu-year);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+  .education-timeline::before{
+    left:8px;
+  }
+
+  .education-item{
+    gap:12px;
+  }
+
+  .edu-content{
+    padding:16px;
+  }
+
+  .edu-year{
+    position:static;
+    display:inline-block;
+    margin-bottom:8px;
+  }
+}
+/* Courses text */
+.edu-courses{
+  font-size:14px;
+  font-style:italic;
+  margin-bottom:8px;
+  color:var(--edu-text);
+}
+
+/* Optional: make courses stand out slightly */
+.edu-courses::before{
+  content:"• ";
+  color:var(--edu-btn-bg);
+  font-weight:bold;
+}
