@@ -43,20 +43,30 @@ const Contact = ({ darkMode }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
+
     try {
+      // ✅ Fixed URL and added await
       const res = await axios.post(
-  "https://nimra-portfolio--namrakhan1426.replit.app/contact",
-  formData
-);
+        "https://nimra-portfolio--namrakhan1426.replit.app/api/contact",
+        formData
+      );
+
       setStatus(res.data.message);
-      setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
     } catch (err) {
       setStatus(err.response?.data?.message || "Error sending message");
     }
   };
 
   return (
-    <section ref={sectionRef}  id="contact"  className={`contact-section ${darkMode ? "dark" : ""}`}>
+    <section ref={sectionRef} id="contact" className={`contact-section ${darkMode ? "dark" : ""}`}>
       <div className="contact-container">
 
         {/* LEFT SIDE */}
