@@ -44,7 +44,10 @@ const Contact = ({ darkMode }) => {
     e.preventDefault();
     setStatus("Sending...");
     try {
-      const res = await axios.post("http://localhost:5000/api/contact", formData);
+      const res = await axios.post(
+  "https://nimra-portfolio--namrakhan1426.replit.app/contact",
+  formData
+);
       setStatus(res.data.message);
       setFormData({ firstName: "", lastName: "", email: "", phone: "", message: "" });
     } catch (err) {
