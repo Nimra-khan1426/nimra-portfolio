@@ -92,10 +92,10 @@ const Hero = ({ darkMode }) => {
   const developer = {
     name: "Nimra Khan",
     title: "Full Stack Developer",
-    experience: "1 year",
+    experience: "6 Months",
     skills: {
       frontend: ["React", "JavaScript", "TypeScript", "Next.js"],
-      backend: ["Node.js","Django", "Python"],
+      backend: ["Node.js","Django"],
       database: ["MongoDB", "MySQL", "PostgreSQL", "Firebase"],
       tools: ["Git", "VS Code", "Docker", "GitHub", "WordPress"]
     },
