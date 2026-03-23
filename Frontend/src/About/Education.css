@@ -21,7 +21,7 @@
 }
 
 .education{
-  padding:80px 5%;
+  padding:50px 5%;
 }
 
 .education-title{
@@ -154,6 +154,12 @@
 
   .education-item{
     gap:12px;
+  }
+  .education{
+    padding-top: 0px ;
+  }
+  .education-title{
+    font-size:30px;
   }
 
   .edu-content{

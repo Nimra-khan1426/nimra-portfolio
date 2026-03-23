@@ -12,7 +12,7 @@
 
 .languages{
 width:100%;
-padding:120px 5%;
+padding:50px 5%;
 }
 
 
@@ -85,6 +85,10 @@ color:var(--lang-sub);
 
 .languages{
 padding:100px 20px;
+}
+
+.languages{
+    padding-top: 0px;
 }
 
 .lang-grid{

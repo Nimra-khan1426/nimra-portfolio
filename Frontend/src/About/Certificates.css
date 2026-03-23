@@ -18,7 +18,7 @@
 
 .certificates{
 width:100%;
-padding:120px 3%;
+padding:50px 3%;
 }
 
 /* HEADER */
@@ -193,6 +193,9 @@ flex:0 0 230px;
 
 .cert-card img{
 height:160px;
+}
+.certificates{
+    padding-top: 0px;
 }
 
 .cert-info{
