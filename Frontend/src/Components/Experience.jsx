@@ -6,25 +6,25 @@ const experienceData = [
   {
     role: "Full Stack Developer",
     company: "Atom Global",
-    year: "Oct-06-2025 - Present",
+    year: "Oct-06-2025 - April-06-2026",
     desc: "Collaborated on real-world web application using Wordpress, React and Next.js. Built responsive UI components and integrated them with backend services. Strengthened understanding of full-stack workflows, clean code practices, and team-based development."
     , 
     tags: ["WordPress", "React", "Next.js", "UI/UX", "Full Stack", "MySql", "MongoDB", "PayloadCMS", "Firebase"]
   },
   {
-    role: "Information Technology Graduate",
-    company: "University",
-    year: "2021 - 2025",
-    desc: "Completed BS Information Technology with focus on web development, databases and system design.",
+    role: "Shopify Developer & UI/UX Designer",
+    company: "Volpea Solutions (PSEB)",
+    year: "April-01-2026 - Oct-01-2026",
+    desc: "Developed and customized highly responsive Shopify themes using Liquid, HTML, CSS, and JavaScript. Built pixel-perfect e-commerce layouts, including advanced Product Detail Pages (PDPs), cart drawers, product galleries, and interactive video components. Engineered custom Shopify Checkout UI Extensions (such as reservation timers and review sliders) and developed Shopify Discount Functions using JavaScript and GraphQL for customer-based logic. Additionally, managed store data using Metafields, Metaobjects, and Shopify Flow, while designing responsive UI/UX prototypes in Figma.",
     tags :[
-  "C++", 
-  "Java", 
-  "C#", 
+  "React", 
+  "Liquid", 
+  "MetaFeilds", 
   "SQL", 
   "HTML", 
   "CSS", 
   "JavaScript",  
-  "PostgreSQL",  
+  "Custom Apps",  
 ]
   },
 ];

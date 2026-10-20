@@ -22,6 +22,22 @@ const Certificates = ({ darkMode }) => {
       </div>
 
       <div className="cert-slider" ref={sliderRef}>
+        <div className="cert-card">
+          <img src="/volpea.jpg" alt="completion certificate" />
+          <div className="cert-info">
+            <h3> Completion Certificate – Volpea Solutions</h3>
+            <span>01-April-2026 – 01-Oct-2026</span>
+          </div>
+        </div>
+
+        
+        <div className="cert-card">
+          <img src="/atom.jpg" alt="completion-certificate" />
+          <div className="cert-info">
+            <h3> Completion Certificate – Atom Global</h3>
+            <span>06-Oct-2025 – 06-April-2026</span>
+          </div>
+        </div>
 
         <div className="cert-card">
           <img src="/Freelance.png" alt="" />

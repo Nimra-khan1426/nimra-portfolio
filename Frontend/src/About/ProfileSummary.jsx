@@ -12,17 +12,17 @@ const ProfileSummary = ({ darkMode }) => {
       </div>
 
       <div className="profile-content">
-        <p>
-          I am a motivated and detail-oriented Information Technology graduate with hands-on experience in web development, programming and system design. I have worked with modern technologies including <strong>React, Next.js, JavaScript, HTML, and CSS</strong> to build responsive and user-friendly interfaces.
-        </p>
+      <p>
+  I am a motivated and detail-oriented Information Technology graduate with hands-on experience in web development, programming, and system design. I specialize in building responsive and user-friendly interfaces using modern technologies like <strong>React, Next.js, JavaScript, HTML, and CSS</strong>.
+</p>
 
-        <p>
-          My technical experience also includes backend development using <strong>Django and Node.js</strong> along with database management using <strong>MongoDB, MySQL, and Firebase</strong>. I have practical exposure to Linux environments such as <strong>Kali Linux and Ubuntu</strong>.
-        </p>
+<p>
+  I also have strong expertise in e-commerce development, specifically in <strong>customizing Shopify themes using Liquid</strong>, building pixel-perfect storefronts, and managing dynamic content. My technical experience includes backend development using <strong>Node.js</strong>, along with robust database management using <strong>MongoDB, MySQL, and Firebase</strong>. Additionally, I have practical exposure to Linux environments, including <strong>Kali Linux and Ubuntu</strong>.
+</p>
 
-        <p>
-          I enjoy learning new technologies, collaborating with teams, and developing scalable digital solutions that improve systems and enhance user experiences.
-        </p>
+<p>
+  I am deeply passionate about learning new technologies, collaborating with teams, and developing scalable digital solutions that improve systems and enhance user experiences.
+</p>
       </div>
     </section>
   );

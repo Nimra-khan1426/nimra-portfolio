@@ -79,8 +79,8 @@ const Hero = ({ darkMode }) => {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Nimrakhan-Resume.pdf";
-    link.download = "Nimrakhan.pdf";
+    link.href = "/Nimra-Khan-Resume.pdf";
+    link.download = "Nimra-khan-Resume.pdf";
     link.click();
   };
 
@@ -92,12 +92,12 @@ const Hero = ({ darkMode }) => {
   const developer = {
     name: "Nimra Khan",
     title: "Full Stack Developer",
-    experience: "6 Months",
+    experience: "01 YEAR",
     skills: {
-      frontend: ["React", "JavaScript", "TypeScript", "Next.js"],
-      backend: ["Node.js","Django"],
-      database: ["MongoDB", "MySQL", "PostgreSQL", "Firebase"],
-      tools: ["Git", "VS Code", "Docker", "GitHub", "WordPress"]
+     frontend: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
+backend: ["Node.js","Firebase","WordPress"],
+database: ["MongoDB", "MySQL", "PostgreSQL", "Firebase"],
+tools: ["GitHub", "WordPress", "Shopify", "Liquid", "Figma",]
     },
     education: "BS Information Technology",
     location: "Rawalpindi, Pakistan"
@@ -122,9 +122,9 @@ const Hero = ({ darkMode }) => {
                 options={{
                   strings: [
                     "Full Stack Developer",
-                    "MERN Stack Developer",
+                    "shopify Developer",
                     "Frontend Developer",
-                    "UI Designer"
+                    "UI/UX Designer"
                   ],
                   autoStart: true,
                   loop: true,
@@ -138,11 +138,10 @@ const Hero = ({ darkMode }) => {
           </h2>
 
           <p className="hero-desc">
-            Information Technology graduate with hands-on experience in web development. 
-            Skilled in HTML, CSS, JavaScript, React, Next.js, and Django. 
-            Experienced in working with MongoDB, MySQL, and Firebase databases. 
-            Familiar with API integration and backend development. 
-            Passionate about learning new technologies and solving real-world problems.
+           I am an IT graduate and Full Stack Developer with hands-on experience in web
+            development, Shopify theme customization, and UI/UX design. Skilled in React,
+             Next.js, JavaScript, Liquid, and modern web technologies, I focus on building 
+             responsive, user-friendly, and scalable digital solutions.
           </p>
 
           {/* BUTTONS */}

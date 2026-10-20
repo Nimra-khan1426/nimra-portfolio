@@ -6,6 +6,23 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+  title: "Beauty Theme Replica (Shopify)",
+  year: "2026",
+  image: "/beauty.png", 
+  desc: "Developed a fully responsive e-commerce replica of a beauty store using Shopify. Customized the theme using Liquid, HTML, CSS, and JavaScript. Designed and integrated custom sections with pixel-perfect UI.PASS:NK12345",
+  tags: ["Shopify", "Liquid", "UI/UX"],
+  live: "https://nimra-khan-95.myshopify.com/", 
+},
+
+  {
+  title: "Shopify E-Commerce Comfrt Theme Customization",
+  year: "2026",
+  image: "/comfrt.png", 
+  desc: "Built a fully responsive e-commerce replica by customizing a Shopify theme using HTML, CSS, JavaScript, and Liquid schema. Implemented custom UI components with full responsiveness. PASS:NK123456.",
+  tags: ["Shopify", "Liquid", "Theme Customization"],
+  live: "https://nimra-khan-04zcneuu.myshopify.com/",
+},
+  {
     title: "Emergency First Aid Assistant Robot",
     year: "2025",
     image: "/Project-1.png",
